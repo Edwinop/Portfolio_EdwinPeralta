@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import './Hero.css'
 const card ={
   backgroundColor: '#EEECE1',
+  paddingBottom: 100
 }
 const cardBody = {
     marginTop: 200,
@@ -11,16 +12,19 @@ const cardBody = {
 const heroCardTitle = {
     width: 'auto',
     fontSize: '200%',
-    fontFamily: 'Quicksand'
+    fontFamily: 'Quicksand, sans-serif',
+    fontWeight: 100
 }
 const heroCardName = {
     fontSize: '500%',
     fontStyle: 'Bold',
-    fontFamily: 'Quicksand'
+    fontFamily: 'Quicksand, sans-serif',
+    fontWeight: 700
 }
 const heroCardText = {
     fontSize: '200%',
-    fontFamily: 'Fira Code'
+    fontFamily: 'Fira Code',
+    color: '#845123'
 }
 const Hero = () => {
 
