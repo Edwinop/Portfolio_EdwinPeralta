@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
 import {Nav,  Navbar} from 'react-bootstrap';
 
 const navColor ={backgroundColor: '#EEECE1'};
@@ -11,9 +10,8 @@ const navItem = {
     fontFamily: 'Quicksand',
     fontSize: 18
 };
-class Navigation extends Component{
+const Navigation = () => {
 
-    render() {
         return (
             <Navbar collapseOnSelect expand="lg" style={navColor}>
                 <Navbar.Brand href="#home"></Navbar.Brand>
@@ -28,7 +26,6 @@ class Navigation extends Component{
                 </Navbar.Collapse>
             </Navbar>
         );
-    }
 
 }
 export default Navigation;
