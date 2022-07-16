@@ -1,30 +1,31 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-
-
+import './Hero.css'
+const card ={
+  backgroundColor: '#EEECE1',
+}
 const cardBody = {
-    backgroundColor: 'EEECE1',
     marginTop: 200,
     marginLeft: 200,
 }
 const heroCardTitle = {
     width: 'auto',
-    fontSize: 48,
+    fontSize: '200%',
     fontFamily: 'Quicksand'
 }
 const heroCardName = {
-    fontSize: 120,
+    fontSize: '500%',
     fontStyle: 'Bold',
     fontFamily: 'Quicksand'
 }
 const heroCardText = {
-    fontSize: 32,
+    fontSize: '200%',
     fontFamily: 'Fira Code'
 }
 const Hero = () => {
 
         return(
-    <Card>
+    <Card className="border_color" style={card}>
       <Card.Body style={cardBody}>
         <Card.Title style={heroCardTitle}>Hello! My name is</Card.Title>
         <Card.Subtitle style={heroCardName}>Edwin Peralta</Card.Subtitle>
