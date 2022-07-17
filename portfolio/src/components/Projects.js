@@ -1,52 +1,64 @@
 import React from 'react';
 import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import './Border.css'
+import logo from './img/medicinalplant.jpg'
+import logo1 from './img/wordleclone.jpg'
+import logo2 from './img/unrealengine.jpg'
 
-const Projects = () => {
+const Projects = () => {  
   return (
     <div>
     <center>
     <MDBCard className="border_color" style={{backgroundColor: '#EEECE1'}}>
       <MDBCardBody >
-      <MDBCardTitle style={{color: '#845123',fontSize: 48, fontFamily: 'Quicksand, sans-serif'}}>Projects</MDBCardTitle>
+      <MDBCardTitle style={{color: '#845123',fontSize: 48, fontFamily: 'Quicksand, sans-serif',marginTop:50}}>Projects</MDBCardTitle>
       </MDBCardBody>
     </MDBCard>
     </center>
     <MDBCard className="border_color" style={{backgroundColor: '#EEECE1'}}>
     <MDBRow className='row-cols-1 row-cols-md-3 g-4' style={{marginLeft: 280, marginTop: 100, marginBottom: 100}}>
       <MDBCol >
-        <MDBCard className='h-100' style={{ maxWidth: '15rem',minHeight: '20rem'}} >
+        <MDBCard className='h-100' style={{ maxWidth: '15rem',minHeight: '15rem', backgroundColor: '#D9D3B6'}} >
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/044.webp'
+            src={logo}
             alt='...'
             position='top'
+            height= '250rem'
           />
           <MDBCardBody>
-            <MDBCardTitle>Medicinal Plant</MDBCardTitle>
+          <center>
+            <MDBCardTitle style={{color: '#845123', fontWeight: '400'}}>Medicinal Plant</MDBCardTitle>
+            </center>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
       <MDBCol>
-        <MDBCard className='h-100' style={{ maxWidth: '15rem',minHeight: '20rem' }}>
+        <MDBCard className='h-100' style={{ maxWidth: '15rem',minHeight: '15rem',backgroundColor: '#D9D3B6' }}>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/043.webp'
+            src={logo1}
             alt='...'
             position='top'
+            height= '250rem'
           />
           <MDBCardBody>
-            <MDBCardTitle>Wordle Clone</MDBCardTitle>
+          <center>
+            <MDBCardTitle style={{color: '#845123', fontWeight: '400'}}>Wordle Clone</MDBCardTitle>
+            </center>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
       <MDBCol>
-        <MDBCard className='h-100' style={{ maxWidth: '15rem',minHeight: '20rem' }}>
+        <MDBCard className='h-100' style={{ maxWidth: '15rem',minHeight: '15rem',backgroundColor: '#D9D3B6' }}>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/042.webp'
+            src={logo2}
             alt='...'
             position='top'
+            height= '250rem'
           />
           <MDBCardBody>
-            <MDBCardTitle>IsaacJones</MDBCardTitle>
+            <center>
+            <MDBCardTitle style={{color: '#845123', fontWeight: '400'}}>IsaacJones</MDBCardTitle>
+            </center>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
