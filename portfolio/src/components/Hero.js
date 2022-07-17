@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import './Hero.css'
-
 const card ={
   backgroundColor: '#EEECE1',
   paddingBottom: 200,
@@ -10,11 +9,9 @@ const card ={
 const cardBody = {
     marginTop: 200,
     marginLeft: 200,
-    width: 'auto'
 }
 const heroCardTitle = {
     width: 'auto',
-    fontSize: '200%',
     fontFamily: 'Quicksand, sans-serif',
     fontWeight: 100,
     marginLeft: 250,
