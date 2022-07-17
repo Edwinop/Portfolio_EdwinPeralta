@@ -1,6 +1,7 @@
 import React from 'react';
 import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import Tilt from "react-parallax-tilt";
+import { CardActionArea } from '@mui/material';
 import './Border.css'
 import logo from './img/medicinalplant.jpg'
 import logo1 from './img/wordleclone.jpg'
@@ -21,6 +22,7 @@ const Projects = () => {
     <MDBRow className='row-cols-1 row-cols-md-3 g-4' style={{marginLeft: 280, marginTop: 100, marginBottom: 100}}>
       <MDBCol >
       <Tilt className="Tilt" options={{ max : 20 }} style={{ height: 325, width: 250 }}>
+        <CardActionArea>
         <MDBCard className='h-100' style={{ maxWidth: '15rem',minHeight: '15rem', backgroundColor: '#D9D3B6',boxShadow: '1px 2px 9px'}} >
           <MDBCardImage
             src={logo}
@@ -35,10 +37,12 @@ const Projects = () => {
             </center>
           </MDBCardBody>
         </MDBCard>
+        </CardActionArea>
         </Tilt>
       </MDBCol>
       <MDBCol>
       <Tilt className="Tilt" options={{ max : 20 }} style={{ height: 325, width: 250 }}>
+      <CardActionArea>
         <MDBCard className='h-100' style={{ maxWidth: '15rem',minHeight: '15rem',backgroundColor: '#D9D3B6',boxShadow: '1px 2px 9px' }}>
           <MDBCardImage
             src={logo1}
@@ -52,10 +56,12 @@ const Projects = () => {
             </center>
           </MDBCardBody>
         </MDBCard>
+        </CardActionArea>
         </Tilt>
       </MDBCol>
       <MDBCol>
       <Tilt className="Tilt" options={{ max : 20 }} style={{ height: 325, width: 250 }}>
+      <CardActionArea>
         <MDBCard className='h-100' style={{ maxWidth: '15rem',minHeight: '15rem',backgroundColor: '#D9D3B6',boxShadow: '1px 2px 9px'}}>
           <MDBCardImage
             src={logo2}
@@ -69,6 +75,7 @@ const Projects = () => {
             </center>
           </MDBCardBody>
         </MDBCard>
+        </CardActionArea>
         </Tilt>
       </MDBCol>   
     </MDBRow>
