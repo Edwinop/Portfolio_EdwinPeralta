@@ -7,13 +7,14 @@ const card ={
   }
   const cardBody = {
       marginTop: 50,
-      marginLeft: 200,
+      marginLeft: 600,
   }
   const heroCardTitle = {
       fontSize: '200%',
       fontFamily: 'Quicksand, sans-serif',
       fontWeight: 600,
-      color: '#845123'
+      color: '#845123',
+      marginBottom: 50
   }
   const heroCardName = {
       fontSize: '150%',
@@ -29,7 +30,9 @@ const card ={
   const button ={
     backgroundColor: '#845123',
     borderColor: '#845123',
-    fontWeight: 100
+    fontWeight: 100,
+    marginTop: 10,
+    borderRadius: 8
   }
 const About = () => {
 
@@ -37,9 +40,6 @@ const About = () => {
         <Card className="border_color" style={card} >
           <Card.Body style={cardBody}>
             <Card.Title style={heroCardTitle}>Currently looking for an Entry Level <br></br>Web Developer Position in NY</Card.Title>
-            <Card.Text style={heroCardText}>
-            I am web developer with a Bachelor of Science in Computer Science <br></br>who has a passion for full stack development and loves playing video games.
-            </Card.Text>
             <Card.Subtitle style={heroCardName}>Front-End</Card.Subtitle>
             <Card.Text style={heroCardText}>
             Java, Javascript, React, HTML, CSS, Bootstrap
@@ -52,7 +52,7 @@ const About = () => {
             <Card.Text style={heroCardText}>
             phpMyAdmin, Git, npm, Github, Figma, VSCode
             </Card.Text>
-            <Button size="sm" style={button}>RESUME</Button>
+            <Button size="sm" style={button}>MY RESUME</Button>
           </Card.Body>
         </Card>
             );
