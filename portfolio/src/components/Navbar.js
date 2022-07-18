@@ -1,20 +1,27 @@
 import React from 'react';
 import {Nav,  Navbar} from 'react-bootstrap';
 
-const navColor ={backgroundColor: '#EEECE1'};
+const navColor ={
+    backgroundColor: '#EEECE1',
+};
 const navItem = {
     color : 'black',
     marginTop: '18px',
     marginLeft: '50px',
     marginRight: '50px',
-    fontFamily: 'Quicksand',
+    fontFamily: 'Quicksand, sans-serif',
     fontSize: 18
 };
+const navBrand ={
+    marginLeft: 20,
+    fontFamily: 'Quicksand, sans-serif',
+    fontSize: 30
+}
 const Navigation = () => {
 
         return (
             <Navbar collapseOnSelect expand="lg" style={navColor}>
-                <Navbar.Brand href="#home">ep</Navbar.Brand>
+                <Navbar.Brand href="#home"style={navBrand}>ep</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto" >

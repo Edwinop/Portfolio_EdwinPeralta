@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import ShuffleText from "react-shuffle-text";
 import './Border.css'
 const card ={
   backgroundColor: '#EEECE1',
@@ -25,7 +26,7 @@ const Hero = () => {
         return(
     <Card className="border_color" style={card}>
       <Card.Body style={cardBody}>
-        <Card.Title style={heroCardTitle}>Im Edwin, a <span style={word}>full stack developer</span><br></br>from NY who loves playing video games.</Card.Title>
+        <Card.Title style={heroCardTitle}>Im Edwin, a <span style={word}><ShuffleText content="full stack developer."/></span><br></br>from NY who loves playing video games.</Card.Title>
       </Card.Body>
     </Card>
         );

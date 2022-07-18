@@ -121,7 +121,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
             <div className="flex-container">
                 <div id="slider">
                     <div className="slide">
-                        <img src={currentPicture} alt={currentSlide.title} title={currentSlide.title} className="slider-img" width = '700rem'/>
+                        <img src={currentPicture} alt={currentSlide.title} title={currentSlide.title} className="slider-img" width = '700rem' height= '400rem'/>
                         <p style={{color: '#845123', fontWeight: '400'}}>{currentSlide.title}</p>
                         <p style={{fontSize: '100%',fontFamily: 'Quicksand, sans-serif',fontWeight: '400'}}>{currentSlide.desc}</p>
                     </div>
