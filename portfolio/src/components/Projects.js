@@ -14,7 +14,7 @@ const Projects = () => {
   const [slides] = useState([
     {
         source: {logo3},
-        title: "Medicinal Plant",
+        title: "Medicinal Plant Knowledge Base",
         desc: "Medicinal Plant is a database that allows users to search, ask questions, and challenge themselves to learn more about medicinal plants located in Korea, China, and Vietnam."
     },
     {
@@ -117,18 +117,22 @@ const slideCardRight = () => {
       </MDBCol>   
     </MDBRow>
     </MDBCard>
-
+    <center>
+    <MDBCard className='h-100 border_color' style={{ maxWidth: '100%',minHeight: '40rem',backgroundColor: '#EEECE1'}}>
     <div className="carousel-block">
             <div className="flex-container">
                 <div id="slider">
                     <div className="slide">
                         <img src={currentSlide.source} alt={currentSlide.title} title={currentSlide.title} className="slider-img" />
-                        <p>{currentSlide.desc}</p>
+                        <p style={{color: '#845123', fontWeight: '400'}}>{currentSlide.title}</p>
+                        <p style={{fontSize: '100%',fontFamily: 'Quicksand, sans-serif',fontWeight: '400'}}>{currentSlide.desc}</p>
                     </div>
 
                 </div>
             </div>
-        </div>
+      </div>
+      </MDBCard>
+      </center>
     </div>
   );
 }
