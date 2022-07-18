@@ -6,24 +6,21 @@ import './Border.css'
 import logo from './img/medicinalplant.jpg'
 import logo1 from './img/wordleclone.jpg'
 import logo2 from './img/isaacjones.jpg'
-import logo3 from './img/medicinalplant.jpg'
-import logo4 from './img/isaacJoneGame.PNG'
-import logo5 from './img/wordleCloneGame.jpg'
 const Projects = () => {
 
   const [slides] = useState([
     {
-        source: {logo3},
+        source: 'medicinalPlantPicture',
         title: "Medicinal Plant Knowledge Base",
         desc: "Medicinal Plant is a database that allows users to search, ask questions, and challenge themselves to learn more about medicinal plants located in Korea, China, and Vietnam."
     },
     {
-        source: {logo4},
+        source: 'isaacJoneGame',
         title: "IsaacJones",
         desc: "IsaacJones is a 3D platform math game maze built with Unreal Engine 4, to teach kids elementary math problem skills. The user must go through obstacles by answering math problems to collect trophies to escape the maze.This was made with one other student in our Software Engineering class."
     },
     {
-        source: {logo5},
+        source: 'wordleCloneGame',
         title: "Wordle Clone",
         desc: "wordle"
     }
@@ -32,7 +29,7 @@ const Projects = () => {
 // SET CAROUSEL DEFAULTS
 let [currentPosition, setCurrentPosition] = useState(0); // Initial slide index value
 let currentSlide = slides[currentPosition]; // variable index value we can reference later
-
+let currentPicture;
 const slideCardLeft = () => {
     setCurrentPosition(0);
     currentSlide = slides[currentPosition];
@@ -45,6 +42,7 @@ const slideCardRight = () => {
   setCurrentPosition(2);
   currentSlide = slides[currentPosition];
 }
+currentPicture = require('./img/'+currentSlide.source+'.jpg');
   return (
     <div>
     <center>
@@ -123,7 +121,7 @@ const slideCardRight = () => {
             <div className="flex-container">
                 <div id="slider">
                     <div className="slide">
-                        <img src={currentSlide.source} alt={currentSlide.title} title={currentSlide.title} className="slider-img" />
+                        <img src={currentPicture} alt={currentSlide.title} title={currentSlide.title} className="slider-img" width = '700rem'/>
                         <p style={{color: '#845123', fontWeight: '400'}}>{currentSlide.title}</p>
                         <p style={{fontSize: '100%',fontFamily: 'Quicksand, sans-serif',fontWeight: '400'}}>{currentSlide.desc}</p>
                     </div>
