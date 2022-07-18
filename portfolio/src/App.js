@@ -4,6 +4,7 @@ import Navigation from "./components/Navbar.js";
 import Hero from "./components/Hero.js";
 import About from "./components/About.js"
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <Contact />
     </div>
   );
 }
