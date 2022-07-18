@@ -9,11 +9,13 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div className="overflow">
+
       <Navigation />
       <Hero />
       <About />
       <Projects />
       <Contact />
+
     </div>
   );
 }

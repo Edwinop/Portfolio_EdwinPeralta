@@ -21,13 +21,13 @@ const Navigation = () => {
 
         return (
             <Navbar collapseOnSelect expand="lg" style={navColor}>
-                <Navbar.Brand href="#home"style={navBrand}>ep</Navbar.Brand>
+                <Navbar.Brand to="/"style={navBrand}>ep</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto" >
-                        <Nav.Link href="#features" style={navItem}>ABOUT</Nav.Link>
-                        <Nav.Link href="#pricing"style={navItem}>PROJECTS</Nav.Link>
-                        <Nav.Link href="#deets"style={navItem}>CONTACT</Nav.Link>
+                        <Nav.Link id="about" to="/about" style={navItem}>ABOUT</Nav.Link>
+                        <Nav.Link id="projects" to="/projects"style={navItem}>PROJECTS</Nav.Link>
+                        <Nav.Link id="contacts" to="/contacts"style={navItem}>CONTACT</Nav.Link>
                         <Nav.Link href="#deets"style={navItem}>LINKEDIN</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
