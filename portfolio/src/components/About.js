@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
@@ -34,10 +34,10 @@ const card ={
     marginTop: 10,
     borderRadius: 8
   }
-  export default class About extends Component {
-    render() {
+
+  const About = () => {
     return(
-      <section id="about">
+      <section id='aboutContainer'>
       <div>
         <Card className="border_color" style={card} >
           <Card.Body style={cardBody}>
@@ -61,4 +61,4 @@ const card ={
         </section>
             );
     }
-}
+export default About

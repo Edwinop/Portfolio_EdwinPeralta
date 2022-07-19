@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import { MDBCard, MDBCardBody, MDBCardTitle} from 'mdb-react-ui-kit';
 import Button from 'react-bootstrap/Button';
 
@@ -10,8 +10,7 @@ const button ={
     marginBottom: 30,
     borderRadius: 8
   }
-  export default class Contact extends Component {
-    render() {
+  const Contact = () => {
   return (
     <section id="contacts">
     <div>
@@ -27,5 +26,6 @@ const button ={
     </div>
     </section>
   )
-    }
 }
+
+export default Contact
