@@ -6,6 +6,7 @@ import './Border.css'
 import logo from './img/medicinalplant.jpg'
 import logo1 from './img/wordleclone.jpg'
 import logo2 from './img/isaacjones.jpg'
+
 const Projects = () => {
 
   const [slides] = useState([
@@ -44,6 +45,7 @@ const slideCardRight = () => {
 }
 currentPicture = require('./img/'+currentSlide.source+'.jpg');
   return (
+    <section id="projects">
     <div>
     <center>
     <MDBCard className="border_color" style={{backgroundColor: '#EEECE1'}}>
@@ -132,6 +134,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
       </MDBCard>
       </center>
     </div>
+    </section>
   );
 }
 export default Projects

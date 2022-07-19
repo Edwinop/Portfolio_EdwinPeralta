@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
@@ -34,9 +34,11 @@ const card ={
     marginTop: 10,
     borderRadius: 8
   }
-const About = () => {
-
+  export default class About extends Component {
+    render() {
     return(
+      <section id="about">
+      <div>
         <Card className="border_color" style={card} >
           <Card.Body style={cardBody}>
             <Card.Title style={heroCardTitle}>Currently looking for an Entry Level <br></br>Web Developer Position in NY</Card.Title>
@@ -55,6 +57,8 @@ const About = () => {
             <Button size="sm" style={button}>MY RESUME</Button>
           </Card.Body>
         </Card>
+        </div>
+        </section>
             );
+    }
 }
-export default About;
