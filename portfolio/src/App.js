@@ -8,13 +8,21 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-
     <div className="overflow">
       <Navigation />
       <Hero />
-      <About />
-      <Projects />
-      <Contact />
+      <About 
+      title="ABOUT"
+      id="about"
+      />
+      <Projects 
+      title="PROJECTS"
+      id="projects"
+      />
+      <Contact 
+      title="CONTACT"
+      id="contact"
+      />
     </div>
 
   );

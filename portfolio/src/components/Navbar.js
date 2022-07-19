@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Nav,  Navbar} from 'react-bootstrap';
-import {Link} from 'react-scroll'
+import { Link } from "react-scroll";
 const navColor ={
     backgroundColor: '#EEECE1',
 };
@@ -23,14 +23,14 @@ export default class Navigation extends Component {
 
         return (
             <Navbar collapseOnSelect expand="lg" style={navColor}>
-                <Navbar.Brand to="/"style={navBrand}>ep</Navbar.Brand>
+                <Navbar.Brand to="/"style={navBrand} className="nav-logo" alt="Logo." onClick={this.scrollToTop}>ep</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto" >
-                        <Link id="about" to="/about"  spy={true} smooth={true} style={navItem}>ABOUT</Link>
-                        <Link id="projects" to="/projects" spy={true} smooth={true} style={navItem}>PROJECTS</Link>
-                        <Link id="contacts" to="/contacts" spy={true} smooth={true} style={navItem}>CONTACT</Link>
-                        <Link href="#deets"style={navItem}>LINKEDIN</Link>
+                        <Link  id="about" to="about"  spy={true} smooth={true} offset={350}  duration={0} style={navItem}>ABOUT</Link>
+                        <Link  id="projects" to="projects" spy={true} smooth={true} offset={1100} duration={0} style={navItem}>PROJECTS</Link>
+                        <Link  id="contacts" to="contacts" spy={true} smooth={true} offset={1600}  duration={0} style={navItem}>CONTACT</Link>
+                        <Link  href="#deets"style={navItem}>LINKEDIN</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
