@@ -9,13 +9,7 @@ const button ={
     marginBottom: 30,
     borderRadius: 8
   }
-  const upButton ={
-    backgroundColor: '#845123',
-    borderColor: '#845123',
-    fontWeight: 100,
-    marginBottom: 30,
-    borderRadius: 8
-  }
+
   const Contact = () => {
   return (
     <section id="contacts">

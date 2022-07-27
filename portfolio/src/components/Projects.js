@@ -56,7 +56,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
     </center>
     
     <MDBCard className="border_color" style={{backgroundColor: '#333341'}}>
-    <MDBRow className='row-cols-1 row-cols-md-3 g-4' style={{marginLeft: 280, marginBottom: 40}}>
+    <MDBRow className='row-cols-1 row-cols-md-3 g-4' style={{marginLeft: '14vw', marginBottom: 40}}>
       <MDBCol >
       <Tilt className="Tilt" options={{ max : 20 }} style={{ height: 325, width: 250 }}>
         <CardActionArea onClick={slideCardLeft}>

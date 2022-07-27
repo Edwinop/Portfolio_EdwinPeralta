@@ -7,22 +7,22 @@ const card ={
   }
   const cardBody = {
       marginTop: 40,
-      marginLeft: 600,
+      marginLeft: '20vw',
   }
   const heroCardTitle = {
-      fontSize: '200%',
+      fontSize: '32px',
       fontFamily: 'Quicksand, sans-serif',
       fontWeight: 600,
       marginBottom: 50
   }
   const heroCardName = {
-      fontSize: '150%',
+      fontSize: '24px',
       fontStyle: 'Bold',
       fontFamily: 'Quicksand, sans-serif',
       fontWeight: 600
   }
   const heroCardText = {
-      fontSize: '100%',
+      fontSize: '24px',
       fontFamily: 'Quicksand, sans-serif',
       fontWeight: 400
   }

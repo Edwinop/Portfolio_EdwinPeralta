@@ -10,14 +10,13 @@ const card ={
 }
 const cardBody = {
     marginTop: 200,
-    marginLeft: 200,
+    marginLeft: '20vw'
 }
 const heroCardTitle = {
     width: 'auto',
     fontFamily: 'Quicksand, sans-serif',
     fontWeight: 100,
-    marginLeft: 250,
-    fontSize: '300%'
+    fontSize: '3vw'
 }
 const word={
   color: '#FF8412'
