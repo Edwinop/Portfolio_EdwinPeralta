@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 import {Nav,  Navbar} from 'react-bootstrap';
 import { Link } from "react-scroll";
 const navColor ={
-    backgroundColor: '#EEECE1',
+    backgroundColor: '#333341',
+    color: 'white'
 };
 const navItem = {
-    color : 'black',
     marginTop: '18px',
     marginLeft: '50px',
     marginRight: '50px',
@@ -15,7 +15,8 @@ const navItem = {
 const navBrand ={
     marginLeft: 20,
     fontFamily: 'Quicksand, sans-serif',
-    fontSize: 30
+    fontSize: 30,
+    color: 'white'
 }
 
 export default class Navigation extends Component {
@@ -30,7 +31,7 @@ export default class Navigation extends Component {
                         <Link  id="about" to="about"  spy={true} smooth={true} offset={350}  duration={0} style={navItem}>ABOUT</Link>
                         <Link  id="projects" to="projects" spy={true} smooth={true} offset={1100} duration={0} style={navItem}>PROJECTS</Link>
                         <Link  id="contacts" to="contacts" spy={true} smooth={true} offset={1600}  duration={0} style={navItem}>CONTACT</Link>
-                        <Link  href="#deets"style={navItem}>LINKEDIN</Link>
+                        <Link  style={navItem}>LINKEDIN</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

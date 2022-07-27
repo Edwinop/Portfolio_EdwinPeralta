@@ -1,11 +1,12 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import ShuffleText from "react-shuffle-text";
-import './Border.css'
+import './Theme.css'
 const card ={
-  backgroundColor: '#EEECE1',
+  backgroundColor: '#333341',
   paddingBottom: 200,
-  width: 'auto'
+  width: 'auto',
+  color: 'white'
 }
 const cardBody = {
     marginTop: 200,
@@ -19,7 +20,7 @@ const heroCardTitle = {
     fontSize: '300%'
 }
 const word={
-  color: '#845123'
+  color: '#FF8412'
 }
 const Hero = () => {
 

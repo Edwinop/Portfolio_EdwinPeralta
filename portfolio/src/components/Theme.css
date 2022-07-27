@@ -1,0 +1,10 @@
+.border_color{
+    border: none;
+    border-radius: 0;
+}
+.card{
+  background-color: '#333341';
+  padding-bottom: 200;
+  width: 'auto';
+  color: 'white';
+}

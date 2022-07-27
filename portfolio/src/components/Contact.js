@@ -3,7 +3,7 @@ import { MDBCard, MDBCardBody, MDBCardTitle} from 'mdb-react-ui-kit';
 import Button from 'react-bootstrap/Button';
 
 const button ={
-    backgroundColor: '#845123',
+    backgroundColor: '#FF8412',
     borderColor: '#845123',
     fontWeight: 100,
     marginBottom: 30,
@@ -21,9 +21,9 @@ const button ={
     <section id="contacts">
     <div>
     <center>
-    <MDBCard className="border_color" style={{backgroundColor: '#EEECE1'}}>
+    <MDBCard className="border_color" style={{backgroundColor: '#D0D0DC'}}>
         <MDBCardBody>
-        <MDBCardTitle style={{color: '#845123',fontSize: 48, fontFamily: 'Quicksand, sans-serif'}}>CONTACT</MDBCardTitle>
+        <MDBCardTitle style={{fontSize: 48, fontFamily: 'Quicksand, sans-serif'}}>CONTACT</MDBCardTitle>
         <div>
         <Button size="sm" style={button}>Email Me</Button>
         </div>

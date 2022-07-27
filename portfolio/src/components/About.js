@@ -3,17 +3,16 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
 const card ={
-    backgroundColor: '#D9D3B6',
+    backgroundColor: '#D0D0DC',
   }
   const cardBody = {
-      marginTop: 50,
+      marginTop: 40,
       marginLeft: 600,
   }
   const heroCardTitle = {
       fontSize: '200%',
       fontFamily: 'Quicksand, sans-serif',
       fontWeight: 600,
-      color: '#845123',
       marginBottom: 50
   }
   const heroCardName = {
@@ -28,7 +27,7 @@ const card ={
       fontWeight: 400
   }
   const button ={
-    backgroundColor: '#845123',
+    backgroundColor: '#FF8412',
     borderColor: '#845123',
     fontWeight: 100,
     marginTop: 10,
