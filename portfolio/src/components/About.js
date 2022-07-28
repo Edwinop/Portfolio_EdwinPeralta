@@ -1,35 +1,29 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-const card ={
-    backgroundColor: '#D0D0DC',
-  }
+
   const cardBody = {
-      marginTop: 40,
-      marginLeft: '20vw',
+      marginTop: 20,
+      marginLeft: '35vw',
   }
   const heroCardTitle = {
       fontSize: '32px',
-      fontFamily: 'Quicksand, sans-serif',
-      fontWeight: 600,
-      marginBottom: 50
+      fontWeight: 400,
+      marginBottom: 30
   }
   const heroCardName = {
       fontSize: '24px',
       fontStyle: 'Bold',
-      fontFamily: 'Quicksand, sans-serif',
-      fontWeight: 600
+      fontWeight: 400
   }
   const heroCardText = {
-      fontSize: '24px',
-      fontFamily: 'Quicksand, sans-serif',
-      fontWeight: 400
+      fontSize: '20px',
+      fontWeight: 10
   }
   const button ={
     backgroundColor: '#FF8412',
     borderColor: '#845123',
-    fontWeight: 100,
+    fontWeight: 50,
     marginTop: 10,
     borderRadius: 8
   }
@@ -38,24 +32,24 @@ const card ={
     return(
       <section id='aboutContainer'>
       <div>
-        <Card className="border_color" style={card} >
-          <Card.Body style={cardBody}>
-            <Card.Title style={heroCardTitle}>Currently looking for an Entry Level <br></br>Web Developer Position in NY</Card.Title>
-            <Card.Subtitle style={heroCardName}>Front-End</Card.Subtitle>
-            <Card.Text style={heroCardText}>
+        <div className="border_color">
+          <div style={cardBody}>
+            <div style={heroCardTitle}>Currently looking for an Entry Level <br></br>Web Developer Position in NY</div>
+            <div style={heroCardName}>Front-End</div>
+            <div style={heroCardText}>
             Java, Javascript, React, HTML, CSS, Bootstrap
-            </Card.Text>
-            <Card.Subtitle style={heroCardName}>Back-End</Card.Subtitle>
-            <Card.Text style={heroCardText}>
+            </div>
+            <div style={heroCardName}>Back-End</div>
+            <div style={heroCardText}>
             NodeJS, Express, PHP, MySQL, MongoDB            
-            </Card.Text>
-            <Card.Subtitle style={heroCardName}>Tools</Card.Subtitle>
-            <Card.Text style={heroCardText}>
+            </div>
+            <div style={heroCardName}>Tools</div>
+            <div style={heroCardText}>
             phpMyAdmin, Git, npm, Github, Figma, VSCode
-            </Card.Text>
+            </div>
             <Button size="sm" style={button}>MY RESUME</Button>
-          </Card.Body>
-        </Card>
+          </div>
+        </div>
         </div>
         </section>
             );

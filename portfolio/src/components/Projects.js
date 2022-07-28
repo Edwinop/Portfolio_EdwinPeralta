@@ -48,19 +48,19 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
     <section id="projects">
     <div>
     <center>
-    <MDBCard className="border_color" style={{backgroundColor: '#333341'}}>
+    <div className="border_color">
       <MDBCardBody >
-      <MDBCardTitle style={{color: 'white',fontSize: 48, fontFamily: 'Quicksand, sans-serif',marginTop:60}}>Projects</MDBCardTitle>
+      <MDBCardTitle style={{fontSize: 48, fontFamily: 'Quicksand, sans-serif',marginTop:60}}>Projects</MDBCardTitle>
       </MDBCardBody>
-    </MDBCard>
+    </div>
     </center>
     
-    <MDBCard className="border_color" style={{backgroundColor: '#333341'}}>
+    <div className="border_color">
     <MDBRow className='row-cols-1 row-cols-md-3 g-4' style={{marginLeft: '14vw', marginBottom: 40}}>
       <MDBCol >
       <Tilt className="Tilt" options={{ max : 20 }} style={{ height: 325, width: 250 }}>
         <CardActionArea onClick={slideCardLeft}>
-        <MDBCard className='h-100 border_color' style={{ maxWidth: '15rem',minHeight: '15rem', backgroundColor: '#D0D0DC'}} >
+        <MDBCard className='h-100 border_color' style={{ maxWidth: '15rem',minHeight: '15rem', backgroundColor: '#FF8412'}} >
           <MDBCardImage
             src={logo}
             alt='...'
@@ -80,7 +80,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
       <MDBCol>
       <Tilt className="Tilt" options={{ max : 20 }} style={{ height: 325, width: 250 }}>
       <CardActionArea onClick={slideCardMiddle}>
-        <MDBCard className='h-100 border_color' style={{ maxWidth: '15rem',minHeight: '15rem',backgroundColor: '#D0D0DC'}}>
+        <MDBCard className='h-100 border_color' style={{ maxWidth: '15rem',minHeight: '15rem',backgroundColor: '#FF8412'}}>
           <MDBCardImage
             src={logo1}
             alt='...'
@@ -99,7 +99,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
       <MDBCol>
       <Tilt className="Tilt" options={{ max : 20 }} style={{ height: 325, width: 250 }}>
       <CardActionArea onClick={slideCardRight}>
-        <MDBCard className='h-100 border_color' style={{ maxWidth: '15rem',minHeight: '15rem',backgroundColor: '#D0D0DC'}}>
+        <MDBCard className='h-100 border_color' style={{ maxWidth: '15rem',minHeight: '15rem',backgroundColor: '#FF8412'}}>
           <MDBCardImage
             src={logo2}
             alt='...'
@@ -116,22 +116,22 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
         </Tilt>
       </MDBCol>   
     </MDBRow>
-    </MDBCard>
+    </div>
     <center>
-    <MDBCard className='h-100 border_color' style={{ maxWidth: '100%',minHeight: '40rem',backgroundColor: '#333341'}}>
+    <div className='h-100 border_color' style={{ maxWidth: '100%',minHeight: '40rem'}}>
     <div className="carousel-block">
             <div className="flex-container">
                 <div id="slider">
                     <div className="slide">
                         <img src={currentPicture} alt={currentSlide.title} title={currentSlide.title} className="slider-img" width = '700rem' height= '400rem'/>
-                        <p style={{color: 'white', fontWeight: '400'}}>{currentSlide.title}</p>
-                        <p style={{fontSize: '100%',fontFamily: 'Quicksand, sans-serif',fontWeight: '400', color:'white'}}>{currentSlide.desc}</p>
+                        <p style={{fontWeight: '400'}}>{currentSlide.title}</p>
+                        <p style={{fontSize: '100%',fontFamily: 'Quicksand, sans-serif',fontWeight: '400'}}>{currentSlide.desc}</p>
                     </div>
 
                 </div>
             </div>
       </div>
-      </MDBCard>
+      </div>
       </center>
     </div>
     </section>

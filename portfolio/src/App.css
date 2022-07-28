@@ -16,7 +16,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -41,12 +40,5 @@
 .overflow{
   overflow-x: hidden;
 }
-.nav-item > .active {
-  border-bottom: 1px solid #333;
-}
-.navbar{
-  background-color: '#EEECE1'
-}
-.color_change{
-  background-color: '#845123'
-}
+
+

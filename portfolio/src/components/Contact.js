@@ -1,5 +1,5 @@
 import React from 'react'
-import { MDBCard, MDBCardBody, MDBCardTitle} from 'mdb-react-ui-kit';
+import {MDBCardBody, MDBCardTitle} from 'mdb-react-ui-kit';
 import Button from 'react-bootstrap/Button';
 
 const button ={
@@ -15,7 +15,7 @@ const button ={
     <section id="contacts">
     <div>
     <center>
-    <MDBCard className="border_color" style={{backgroundColor: '#D0D0DC'}}>
+    <div className="border_color">
         <MDBCardBody>
         <MDBCardTitle style={{fontSize: 48, fontFamily: 'Quicksand, sans-serif'}}>CONTACT</MDBCardTitle>
         <div>
@@ -23,7 +23,7 @@ const button ={
         </div>
         <p>edwperalta3@gmail.com</p>
         </MDBCardBody>
-    </MDBCard>
+    </div>
     </center>
     </div>
     </section>
