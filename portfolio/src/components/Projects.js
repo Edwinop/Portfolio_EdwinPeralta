@@ -118,7 +118,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
     </MDBRow>
     </div>
     <center>
-    <div className='h-100 border_color' style={{ maxWidth: '100%',minHeight: '40rem'}}>
+    <div className='h-100 border_color' style={{ maxWidth: '100%',minHeight: '32rem'}}>
     <div className="carousel-block">
             <div className="flex-container">
                 <div id="slider">
