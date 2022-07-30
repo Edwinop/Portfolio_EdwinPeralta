@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBRow, MDBCol } from 'mdb-react-ui-kit';
+import { MDBCard, MDBCardBody, MDBCardTitle, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import Tilt from "react-parallax-tilt";
 import { CardActionArea } from '@mui/material';
 import './Theme.css'
 import logo from './img/medicinalplant.jpg'
-import logo1 from './img/wordleclone.jpg'
-import logo2 from './img/isaacjones.jpg'
+import logo1 from './img/weather.jpg'
+import logo2 from './img/notes.jpg'
 
 const Projects = () => {
 
@@ -60,19 +60,10 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
       <MDBCol >
       <Tilt className="Tilt" options={{ max : 20 }} style={{ height: 325, width: 250 }}>
         <CardActionArea onClick={slideCardLeft}>
-        <MDBCard className='h-100 border_color' style={{ maxWidth: '15rem',minHeight: '15rem', backgroundColor: '#FF8412'}} >
-          <MDBCardImage
-            src={logo}
-            alt='...'
-            position='top'
-            height= '250rem'
-            
-          />
-          <MDBCardBody>
+        <MDBCard className='h-100 border_color image_position' style={{ maxWidth: '15rem',minHeight: '20rem', borderRadius: 8, backgroundImage: `url(${logo})` }} >
           <center>
-            <MDBCardTitle style={{fontWeight: '400'}}>Medicinal Plant</MDBCardTitle>
-            </center>
-          </MDBCardBody>
+          <h1>Medicinal Plant</h1>
+          </center>
         </MDBCard>
         </CardActionArea>
         </Tilt>
@@ -80,18 +71,10 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
       <MDBCol>
       <Tilt className="Tilt" options={{ max : 20 }} style={{ height: 325, width: 250 }}>
       <CardActionArea onClick={slideCardMiddle}>
-        <MDBCard className='h-100 border_color' style={{ maxWidth: '15rem',minHeight: '15rem',backgroundColor: '#FF8412'}}>
-          <MDBCardImage
-            src={logo1}
-            alt='...'
-            position='top'
-            height= '250rem'
-          />
-          <MDBCardBody>
+        <MDBCard className='h-100 border_color image_position' style={{ maxWidth: '15rem',minHeight: '20rem', borderRadius: 8,backgroundImage: `url(${logo1})` }}>
           <center>
-            <MDBCardTitle style={{fontWeight: '400'}}>Wordle Clone</MDBCardTitle>
-            </center>
-          </MDBCardBody>
+            <h1>Weather<br></br>App</h1>
+          </center>
         </MDBCard>
         </CardActionArea>
         </Tilt>
@@ -99,18 +82,10 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
       <MDBCol>
       <Tilt className="Tilt" options={{ max : 20 }} style={{ height: 325, width: 250 }}>
       <CardActionArea onClick={slideCardRight}>
-        <MDBCard className='h-100 border_color' style={{ maxWidth: '15rem',minHeight: '15rem',backgroundColor: '#FF8412'}}>
-          <MDBCardImage
-            src={logo2}
-            alt='...'
-            position='top'
-            height= '250rem'
-          />
-          <MDBCardBody>
-            <center>
-            <MDBCardTitle style={{fontWeight: '400'}}>IsaacJones</MDBCardTitle>
-            </center>
-          </MDBCardBody>
+        <MDBCard className='h-100 border_color image_position' style={{ maxWidth: '15rem',minHeight: '20rem', borderRadius: 8,backgroundImage: `url(${logo2})` }}>
+        <center>
+            <h1>Notes<br></br>App</h1>
+          </center>
         </MDBCard>
         </CardActionArea>
         </Tilt>

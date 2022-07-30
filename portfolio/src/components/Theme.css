@@ -8,3 +8,11 @@
   width: 'auto';
   color: 'white';
 }
+.image_position{
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
