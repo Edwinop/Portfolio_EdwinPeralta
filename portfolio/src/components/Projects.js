@@ -12,18 +12,21 @@ const Projects = () => {
   const [slides] = useState([
     {
         source: 'medicinalPlantPicture',
-        title: "Medicinal Plant Knowledge Base",
-        desc: "Medicinal Plant is a database that allows users to search, ask questions, and challenge themselves to learn more about medicinal plants located in Korea, China, and Vietnam."
+        title: "Medicinal Plant Knowledge Base Project",
+        desc: "Medicinal Plant is a database that allows users to search, ask questions, and challenge themselves to learn more about medicinal plants located in Korea, China, and Vietnam.",
+        link: "https://cs.newpaltz.edu/p/s22-01/v7/home.php"
     },
     {
-        source: 'isaacJoneGame',
-        title: "IsaacJones",
-        desc: "IsaacJones is a 3D platform math game maze built with Unreal Engine 4, to teach kids elementary math problem skills. The user must go through obstacles by answering math problems to collect trophies to escape the maze.This was made with one other student in our Software Engineering class."
+        source: 'weatherapp',
+        title: "Weather Project",
+        desc: "Developed a project which can tell you the weather in certain cities, it consist of 2 widgets, one for current weather and a 7- day forecast The webpage is built with ReactJS, HTML ,CSS, and tools such as webpack and npmGathered city data from the RapidAPI, and weather data from the OpenWeather API",
+        link: "https://github.com/Edwinop/weather-app-ep"
     },
     {
-        source: 'wordleCloneGame',
-        title: "Wordle Clone",
-        desc: "wordle"
+        source: 'notesapp',
+        title: "Notes Project",
+        desc: "A project thats lets you create notes to stay organized! It uses React and tools like webpack and tools. It consist of a search bar that lets you query through your notes and allows you to color your notes to keep organized!",
+        link: "https://github.com/Edwinop/Notes-ep"
     }
 ]);
 
@@ -50,7 +53,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
     <center>
     <div className="border_color">
       <MDBCardBody >
-      <MDBCardTitle style={{fontSize: 48, fontFamily: 'Quicksand, sans-serif',marginTop:60}}>Projects</MDBCardTitle>
+      <MDBCardTitle className='container-title'  style={{fontFamily: 'Quicksand, sans-serif'}}>Projects</MDBCardTitle>
       </MDBCardBody>
     </div>
     </center>
@@ -62,7 +65,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
         <CardActionArea onClick={slideCardLeft}>
         <MDBCard className='h-100 border_color image_position' style={{ maxWidth: '15rem',minHeight: '20rem', borderRadius: 8, backgroundImage: `url(${logo})` }} >
           <center>
-          <h1>Medicinal Plant</h1>
+          <h1 className='card-title'>Medicinal Plant</h1>
           </center>
         </MDBCard>
         </CardActionArea>
@@ -73,7 +76,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
       <CardActionArea onClick={slideCardMiddle}>
         <MDBCard className='h-100 border_color image_position' style={{ maxWidth: '15rem',minHeight: '20rem', borderRadius: 8,backgroundImage: `url(${logo1})` }}>
           <center>
-            <h1>Weather<br></br>App</h1>
+            <h1 className='card-title'>Weather<br></br>App</h1>
           </center>
         </MDBCard>
         </CardActionArea>
@@ -84,7 +87,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
       <CardActionArea onClick={slideCardRight}>
         <MDBCard className='h-100 border_color image_position' style={{ maxWidth: '15rem',minHeight: '20rem', borderRadius: 8,backgroundImage: `url(${logo2})` }}>
         <center>
-            <h1>Notes<br></br>App</h1>
+            <h1 className='card-title'>Notes<br></br>App</h1>
           </center>
         </MDBCard>
         </CardActionArea>
@@ -99,8 +102,9 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
                 <div id="slider">
                     <div className="slide">
                         <img src={currentPicture} alt={currentSlide.title} title={currentSlide.title} className="slider-img" width = '700rem' height= '400rem'/>
-                        <p style={{fontWeight: '400'}}>{currentSlide.title}</p>
-                        <p style={{fontSize: '100%',fontFamily: 'Quicksand, sans-serif',fontWeight: '400'}}>{currentSlide.desc}</p>
+                        <p style={{fontWeight: '400',fontFamily: 'Quicksand, sans-serif'}}>{currentSlide.title}</p>
+                        <p style={{fontSize: '100%',fontFamily: 'Quicksand, sans-serif',fontWeight: '400',width: '30vw'}}>{currentSlide.desc}</p>
+                        <a href={currentSlide.link}><button className='link-button'  style={{fontFamily: 'Quicksand, sans-serif'}}>Link</button></a>
                     </div>
 
                 </div>

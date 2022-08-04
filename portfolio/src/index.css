@@ -11,3 +11,55 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.overflow{
+  overflow-x: hidden;
+  font-family: 'Quicksand, sans-serif';
+}
+.scrollTop {
+  position: relative;
+  width: 100%;
+  bottom: 100px;
+  left: 900px;
+  height: 20px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+.border_color{
+  border: none;
+  border-radius: 0;
+}
+.card{
+background-color: '#333341';
+padding-bottom: 200;
+width: 'auto';
+color: 'white';
+}
+.image_position{
+height: 100%;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+display: grid;
+place-items: center;
+}
+.link-button{
+  background-color: #FF8412;
+  border-radius: 8vw;
+  min-width: 5vw;
+}
+.card-title{
+  color:white
+}
+.container-title{
+  font-size: 48;
+  margin-top:10vh;
+  color:#FF8412;
+}
+.contact-title{
+  font-size: 48; 
+  color:#FF8412;
+}

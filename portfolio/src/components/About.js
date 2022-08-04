@@ -25,12 +25,13 @@ import Button from 'react-bootstrap/Button';
     borderColor: '#845123',
     fontWeight: 50,
     marginTop: 10,
-    borderRadius: 8
+    borderRadius: 8,
+    fontFamily: 'Quicksand, sans-serif'
   }
 
   const About = () => {
     return(
-      <section id='aboutContainer'>
+      <section id='aboutContainer'  style={{fontFamily: 'Quicksand, sans-serif'}}>
       <div>
         <div className="border_color">
           <div style={cardBody}>
