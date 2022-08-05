@@ -57,9 +57,9 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
       </MDBCardBody>
     </div>
     </center>
-    
+    <center>
     <div className="border_color">
-    <MDBRow className='row-cols-1 row-cols-md-3 g-4' style={{marginLeft: '14vw', marginBottom: 40}}>
+    <MDBRow className='row-cols-1 row-cols-md-3 g-4' style={{ marginBottom: 40}}>
       <MDBCol >
       <Tilt className="Tilt" options={{ max : 20 }} style={{ height: 325, width: 250 }}>
         <CardActionArea onClick={slideCardLeft}>
@@ -95,6 +95,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
       </MDBCol>   
     </MDBRow>
     </div>
+    </center>
     <center>
     <div className='h-100 border_color' style={{ maxWidth: '100%',minHeight: '32rem'}}>
     <div className="carousel-block">
