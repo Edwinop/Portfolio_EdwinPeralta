@@ -4,15 +4,14 @@ import Button from 'react-bootstrap/Button';
 
   const cardBody = {
       marginTop: 20,
-      marginLeft: '35vw',
   }
   const heroCardTitle = {
-      fontSize: '32px',
+      fontSize: '30px',
       fontWeight: 400,
       marginBottom: 30
   }
   const heroCardName = {
-      fontSize: '24px',
+      fontSize: '25px',
       fontStyle: 'Bold',
       fontWeight: 400
   }
@@ -31,8 +30,8 @@ import Button from 'react-bootstrap/Button';
 
   const About = () => {
     return(
+      <center>
       <section id='aboutContainer'  style={{fontFamily: 'Quicksand, sans-serif'}}>
-      <div>
         <div className="border_color">
           <div style={cardBody}>
             <div style={heroCardTitle}>Currently looking for an Entry Level <br></br>Web Developer Position in NY</div>
@@ -51,8 +50,8 @@ import Button from 'react-bootstrap/Button';
             <Button size="sm" style={button}>MY RESUME</Button>
           </div>
         </div>
-        </div>
         </section>
+        </center>
             );
     }
 export default About
