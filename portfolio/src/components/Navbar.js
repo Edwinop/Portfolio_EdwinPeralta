@@ -28,7 +28,6 @@ export default class Navigation extends Component {
                         <Link  id="about" to="about"  spy={true} smooth={true} offset={350}  duration={0} style={navItem}>ABOUT</Link>
                         <Link  id="projects" to="projects" spy={true} smooth={true} offset={1100} duration={0} style={navItem}>PROJECTS</Link>
                         <Link  id="contacts" to="contacts" spy={true} smooth={true} offset={1600}  duration={0} style={navItem}>CONTACT</Link>
-                        <Link  style={navItem}>LINKEDIN</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
