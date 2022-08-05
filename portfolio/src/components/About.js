@@ -16,15 +16,6 @@ import React from 'react';
       fontSize: '20px',
       fontWeight: 10
   }
-  const button ={
-    backgroundColor: '#FF8412',
-    borderColor: '#845123',
-    fontWeight: 50,
-    marginTop: 10,
-    borderRadius: 8,
-    fontFamily: 'Quicksand, sans-serif'
-  }
-
   const About = () => {
     return(
       <center>
