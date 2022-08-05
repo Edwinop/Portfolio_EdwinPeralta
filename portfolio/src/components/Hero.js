@@ -4,6 +4,7 @@ import ShuffleText from "react-shuffle-text";
 import './Theme.css'
 const card ={
   paddingBottom: 200,
+  marginRight: '10vw',
   width: 'auto',
 }
 const cardBody = {
@@ -24,7 +25,7 @@ const Hero = () => {
         return(
     <div className="border_color" style={card}>
       <div style={cardBody}>
-        <div style={heroCardTitle}>Im Edwin, a <span style={word}><ShuffleText content="full stack developer."/></span><br></br>from NY who loves playing video games.</div>
+        <div style={heroCardTitle}>Im Edwin, a <span style={word}><ShuffleText content="React Developer."/></span><br></br>from NY who loves playing video games.</div>
       </div>
     </div>
         );
