@@ -1,7 +1,4 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-
-
   const cardBody = {
       marginTop: 20,
   }
@@ -47,7 +44,6 @@ import Button from 'react-bootstrap/Button';
             <div style={heroCardText}>
             phpMyAdmin, Git, npm, Github, Figma, VSCode
             </div>
-            <Button size="sm" style={button}>MY RESUME</Button>
           </div>
         </div>
         </section>
