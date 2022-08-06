@@ -17,6 +17,7 @@ const themeBtn = {
     borderRadius: 12,
     marginLeft: '.75vw',
     borderColor: isHover ? '#FF8412' : 'black',
+    fontFamily: 'Quicksand, sans-serif'
   }
 const handleMouseEnter = ()=>{
   setIsHover(true);

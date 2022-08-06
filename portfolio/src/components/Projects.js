@@ -59,7 +59,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
     </center>
     <center>
     <div className="border_color">
-    <MDBRow className='row-cols-1 row-cols-md-3 g-4' style={{ marginBottom: 40}}>
+    <MDBRow className='row-cols-1 row-cols-md-3 g-4' style={{ marginBottom: 40,fontFamily: 'Quicksand, sans-serif'}}>
       <MDBCol >
       <Tilt className="Tilt" options={{ max : 20 }} style={{ height: 325, width: 250 }}>
         <CardActionArea onClick={slideCardLeft}>
@@ -105,7 +105,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
                         <img src={currentPicture} alt={currentSlide.title} title={currentSlide.title} className="slider-img" width = '700rem' height= '400rem'/>
                         <p style={{fontWeight: '400',fontFamily: 'Quicksand, sans-serif'}}>{currentSlide.title}</p>
                         <p style={{fontSize: '100%',fontFamily: 'Quicksand, sans-serif',fontWeight: '400',width: '30vw'}}>{currentSlide.desc}</p>
-                        <a href={currentSlide.link} target="_blank"><button className='link-button'  style={{fontFamily: 'Quicksand, sans-serif'}} >Link</button></a>
+                        <a href={currentSlide.link}><button className='link-button'  style={{fontFamily: 'Quicksand, sans-serif'}} >Link</button></a>
                     </div>
 
                 </div>
