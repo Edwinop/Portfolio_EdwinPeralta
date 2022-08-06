@@ -105,7 +105,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
                         <img src={currentPicture} alt={currentSlide.title} title={currentSlide.title} className="slider-img" width = '700rem' height= '400rem'/>
                         <p style={{fontWeight: '400',fontFamily: 'Quicksand, sans-serif'}}>{currentSlide.title}</p>
                         <p style={{fontSize: '100%',fontFamily: 'Quicksand, sans-serif',fontWeight: '400',width: '30vw'}}>{currentSlide.desc}</p>
-                        <a href={currentSlide.link}><button className='link-button'  style={{fontFamily: 'Quicksand, sans-serif'}}>Link</button></a>
+                        <a href={currentSlide.link}><button className='link-button'  style={{fontFamily: 'Quicksand, sans-serif'}} target="_blank">Link</button></a>
                     </div>
 
                 </div>
