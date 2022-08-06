@@ -25,7 +25,7 @@ const Hero = () => {
         return(
     <div className="border_color" style={card}>
       <div style={cardBody}>
-        <div style={heroCardTitle}>Im Edwin, a <span style={word}><ShuffleText content="React Developer."/></span><br></br>from NY who loves playing video games.</div>
+        <div style={heroCardTitle}>Im Edwin, a <span style={word}><ShuffleText content="Front Developer"/></span><br></br>from NY who loves playing video games.</div>
       </div>
     </div>
         );

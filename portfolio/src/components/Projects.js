@@ -53,7 +53,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
     <center>
     <div className="border_color">
       <MDBCardBody >
-      <MDBCardTitle className='container-title'  style={{fontFamily: 'Quicksand, sans-serif'}}>Projects</MDBCardTitle>
+      <MDBCardTitle className='container-title'  style={{fontFamily: 'Quicksand, sans-serif', fontSize:'40px'}}>Projects</MDBCardTitle>
       </MDBCardBody>
     </div>
     </center>
