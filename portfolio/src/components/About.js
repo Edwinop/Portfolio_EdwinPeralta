@@ -14,7 +14,8 @@ import React from 'react';
   }
   const heroCardText = {
       fontSize: '20px',
-      fontWeight: 10
+      fontWeight: 10,
+      marginBottom: 5
   }
   const About = () => {
     return(

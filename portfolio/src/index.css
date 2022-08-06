@@ -45,6 +45,7 @@ background-position: center;
 background-size: cover;
 display: grid;
 place-items: center;
+font-family: 'Quicksand, sans-serif';
 }
 .link-button{
   background-color: #FF8412;
