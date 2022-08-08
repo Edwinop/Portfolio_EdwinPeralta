@@ -30,6 +30,8 @@ const initialState = {
       const isDark = !dark
       localStorage.setItem('dark', JSON.stringify(isDark))
       setDark(isDark)
+      const toggles = document.getElementById('toggle')
+      toggles.classList.toggle('active');
     }
   
     const theme = dark ? themes.dark : themes.light
