@@ -3,7 +3,7 @@ import { MDBCard, MDBCardBody, MDBCardTitle, MDBRow, MDBCol } from 'mdb-react-ui
 import Tilt from "react-parallax-tilt";
 import { CardActionArea } from '@mui/material';
 import './Theme.css'
-import logo from './img/medicinalplant.jpg'
+import logo from './img/travel.jpg'
 import logo1 from './img/weather.jpg'
 import logo2 from './img/notes.jpg'
 
@@ -11,9 +11,9 @@ const Projects = () => {
 
   const [slides] = useState([
     {
-        source: 'medicinalPlantPicture',
-        title: "Medicinal Plant Knowledge Base Project",
-        desc: "Medicinal Plant is a database that allows users to search, ask questions, and challenge themselves to learn more about medicinal plants located in Korea, China, and Vietnam.",
+        source: 'traveler',
+        title: "Travel Advisor",
+        desc: "Travelor helps people find restaurants, hotels, and attractions from any area they choose. The projects includes React, Material UI, Google API's, and Rapid API",
         link: "https://cs.newpaltz.edu/p/s22-01/v7/home.php"
     },
     {
@@ -65,7 +65,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
         <CardActionArea onClick={slideCardLeft}>
         <MDBCard className='h-100 border_color image_position' style={{ maxWidth: '15rem',minHeight: '20rem', borderRadius: 8, backgroundImage: `url(${logo})` }} >
           <center>
-          <h1 className='card-title'>Medicinal Plant</h1>
+          <h1 className='card-title'>Traveler</h1>
           </center>
         </MDBCard>
         </CardActionArea>
@@ -102,7 +102,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
             <div className="flex-container">
                 <div id="slider">
                     <div className="slide">
-                        <img src={currentPicture} alt={currentSlide.title} title={currentSlide.title} className="slider-img" width = '700rem' height= '400rem'/>
+                        <img src={currentPicture} alt={currentSlide.title} title={currentSlide.title} className="slider-img" width = '500rem' height= '400rem'/>
                         <p style={{fontWeight: '400',fontFamily: 'Quicksand, sans-serif'}}>{currentSlide.title}</p>
                         <p style={{fontSize: '100%',fontFamily: 'Quicksand, sans-serif',fontWeight: '400',width: '30vw'}}>{currentSlide.desc}</p>
                         <a href={currentSlide.link}><button className='link-button'  style={{fontFamily: 'Quicksand, sans-serif'}} >Link</button></a>
