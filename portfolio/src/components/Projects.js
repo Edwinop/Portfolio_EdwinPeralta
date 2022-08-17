@@ -14,7 +14,7 @@ const Projects = () => {
         source: 'traveler',
         title: "Travel Advisor",
         desc: "Travelor helps people find restaurants, hotels, and attractions from any area they choose. The projects includes React, Material UI, Google API's, and Rapid API",
-        link: "https://cs.newpaltz.edu/p/s22-01/v7/home.php"
+        link: "https://github.com/Edwinop/Travel-Project-EP"
     },
     {
         source: 'weatherapp',
@@ -23,10 +23,10 @@ const Projects = () => {
         link: "https://github.com/Edwinop/weather-app-ep"
     },
     {
-        source: 'notesapp',
+        source: 'Postit',
         title: "Notes Project",
         desc: "A project thats lets you create notes to stay organized! It uses React and tools like webpack and tools. It consist of a search bar that lets you query through your notes and allows you to color your notes to keep organized!",
-        link: "https://github.com/Edwinop/Notes-ep"
+        link: "https://edwin-peralta-postit.netlify.app"
     }
 ]);
 
