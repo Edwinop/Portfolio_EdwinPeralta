@@ -26,7 +26,7 @@ const Projects = () => {
         source: 'Postit',
         title: "Notes Project",
         desc: "A project thats lets you create notes to stay organized! It uses React and tools like webpack and tools. It consist of a search bar that lets you query through your notes and allows you to color your notes to keep organized!",
-        link: "https://edwin-peralta-postit.netlify.app"
+        link: "https://github.com/Edwinop/Notes-ep"
     }
 ]);
 
