@@ -18,14 +18,14 @@ const Projects = () => {
     },
     {
         source: 'weatherapp',
-        title: "Weather Project",
-        desc: "Developed a project which can tell you the weather in certain cities, it consist of 2 widgets, one for current weather and a 7- day forecast The webpage is built with ReactJS, HTML ,CSS, and tools such as webpack and npmGathered city data from the RapidAPI, and weather data from the OpenWeather API",
+        title: "Weather",
+        desc: "Developed a web app which can tell you the weather in certain cities, it consist of 2 widgets, one for current weather and a 7- day forecast The webpage is built with ReactJS, HTML ,CSS, and tools such as webpack and npmGathered city data from the RapidAPI, and weather data from the OpenWeather API",
         link: "https://github.com/Edwinop/weather-app-ep"
     },
     {
         source: 'notesapp',
-        title: "Postit Project",
-        desc: "A project thats lets you create notes to stay organized! It uses React and tools like webpack and tools. It consist of a search bar that lets you query through your notes and allows you to color your notes to keep organized!",
+        title: "Postit ",
+        desc: "A web app thats lets you create notes to stay organized! It uses React and tools like webpack and tools. It consist of a search bar that lets you query through your notes and allows you to color your notes to keep organized!",
         link: "https://github.com/Edwinop/Notes-ep"
     }
 ]);
@@ -76,7 +76,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
       <CardActionArea onClick={slideCardMiddle}>
         <MDBCard className='h-100 border_color image_position' style={{ maxWidth: '15rem',minHeight: '20rem', borderRadius: 8,backgroundImage: `url(${logo1})` }}>
           <center>
-            <h1 className='card-title'>Weather<br></br>App</h1>
+            <h1 className='card-title'>Weather</h1>
           </center>
         </MDBCard>
         </CardActionArea>
@@ -87,7 +87,7 @@ currentPicture = require('./img/'+currentSlide.source+'.jpg');
       <CardActionArea onClick={slideCardRight}>
         <MDBCard className='h-100 border_color image_position' style={{ maxWidth: '15rem',minHeight: '20rem', borderRadius: 8,backgroundImage: `url(${logo2})` }}>
         <center>
-            <h1 className='card-title'>Notes<br></br>App</h1>
+            <h1 className='card-title'>Postit</h1>
           </center>
         </MDBCard>
         </CardActionArea>
